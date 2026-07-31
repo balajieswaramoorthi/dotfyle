@@ -32,11 +32,15 @@ return {
 			palettes = {
 				carbonfox = {
 					bg1			= "#161616",		-- Carbonfox default background
-					red			= "#F50623",
-					green		= "#00FF00",
-					white		= "#FFFFFF",
-					blue		= "#0000FF",
-					orange		= "#FF6E13",
+					red			= "#EE5396",
+					green		= "#25BE6A",
+					yellow		= "#08BDBA",
+					blue		= "#78A9FF",
+					magenta		= "#BE95FF",
+					cyan		= "#33B1FF",
+					white		= "#DFDFE0",
+					orange		= "#3DDBD9",
+					pink		= "#FF7EB6",
 				},
 			},
 			specs = {
@@ -54,27 +58,27 @@ return {
 				},
 				carbonfox = {
 					syntax = {
-						bracket     = "white",               -- Brackets and punctuation (neutral)
+						bracket     = "fg2",                 -- Brackets and punctuation (neutral)
 						builtin0    = "red.base",            -- Builtin variables (alerts you it's special)
 						builtin1    = "cyan.bright",         -- Builtin types (distinct and cool tone)
 						builtin2    = "orange.bright",       -- Builtin constants (draws attention)
-						builtin3    = "magenta.bright",      -- Reserved: alternate special highlight
-						comment     = "cyan.bright",           -- Comments (dimmed to reduce visual noise)
-						conditional = "magenta.base",        -- Conditionals and loops (recognizable)
-						const       = "orange",              -- Constants, imports, booleans
-						dep         = "gray",                -- Deprecated (low contrast, faded)
+						builtin3    = "red.bright",          -- Reserved: alternate special highlight
+						comment     = "comment",             -- Comments (dimmed to reduce visual noise)
+						conditional = "magenta.bright",      -- Conditionals and loops (recognizable)
+						const       = "orange.bright",       -- Constants, imports, booleans
+						dep         = "fg3",                 -- Deprecated (low contrast, faded)
 						field       = "blue.base",           -- Object fields (stand out but soft)
-						func        = "blue",                -- Function names and titles
-						ident       = "blue",                -- Identifiers (closely tied to fields)
-						keyword     = "magenta.bright",      -- Keywords (strong control flow terms)
-						number      = "yellow",              -- Numbers (bright and obvious)
-						operator    = "white",               -- Operators (neutral, not too flashy)
+						func        = "blue.bright",         -- Function names and titles
+						ident       = "cyan.base",           -- Identifiers
+						keyword     = "magenta.base",        -- Keywords (strong control flow terms)
+						number      = "orange.base",         -- Numbers (bright and obvious)
+						operator    = "fg2",                 -- Operators (neutral, not too flashy)
 						preproc     = "pink.bright",         -- Preprocessor (stand out)
-						regex       = "green.bright",        -- Regex (vivid and unique)
+						regex       = "yellow.bright",       -- Regex (vivid and unique)
 						statement   = "magenta.base",        -- Statements (match keyword)
-						string      = "green.bright",        -- Strings (lively but soft on eyes)
+						string      = "green.base",          -- Strings (lively but soft on eyes)
 						type        = "yellow.base",         -- Type annotations (distinct)
-						variable    = "cyan.base",           -- General variables
+						variable    = "white.base",          -- General variables
 					},
 				},
 			},
